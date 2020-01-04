@@ -4,6 +4,7 @@
 这是个web目录扫描器
 
 用法：./dirscan.py -w /usr/share/wordlists/wfuzz/general/common.txt -u xxxxxxxxxxxx.com -t 5
+
 -t 线程数（默认5） -w 字典 （必须）-u （必须）
 ```
 ./dirscan.py -h
