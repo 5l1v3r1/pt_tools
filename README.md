@@ -1,5 +1,7 @@
 # pt_tools
-本脚本程序仅为学习交流，请遵守《中华人民共和国网络安全法》,勿用于非授权测试,如作他用所承受的法律责任一概与作者无关。
+<font color=red >本脚本程序仅为学习交流分享，请遵守《中华人民共和国网络安全法》,勿用于非授权测试,如作他用所承受的法律责任一概与作者无关。</font>
+
+这是个web目录扫描器
 ```
 ./dirscan.py -h
 usage: dirscan.py [-h] [-t THREAD_NUM] [-u URLS] [-w WORDLISTS]
