@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+#author : n00B
 
 #import pdb
 from sys import argv
