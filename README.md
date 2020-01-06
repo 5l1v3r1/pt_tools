@@ -1,7 +1,8 @@
 # pt_tools
 本脚本程序仅为学习交流分享，请遵守《中华人民共和国网络安全法》,勿用于非授权测试,如作他用所承受的法律责任一概与作者无关。
+***
 
-这是个web目录扫描器
+dirscan.py 是个 web目录扫描器
 
 用法：./dirscan.py -w /usr/share/wordlists/wfuzz/general/common.txt -u xxxxxxxxxxxx.com -t 5
 
@@ -15,4 +16,6 @@ optional arguments:
 -u URLS        url options
 -w WORDLISTS   wordlists options
 ```
+***
 
+DOS.java是DOS攻击demo
