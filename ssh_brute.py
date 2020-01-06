@@ -27,7 +27,7 @@ def run(host , username , passwords):
                 #pdb.set_trace()
                 ssh = pxssh.pxssh()
                 ssh.login(host , username , pwd)
-                print(GREEN+host, username, pwd + none)
+                print("login sucess HOST :"+GREEN+ host + none + "  USERNAME :"+GREEN+username+none + "  password :"+GREEN+ pwd + none)
         except Exception as e:
             print(e)
             pass
