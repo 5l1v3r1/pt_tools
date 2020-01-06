@@ -33,4 +33,6 @@ ssh_brute.py 是个 ssh爆破脚本
 ```
 ***
 
-DOS.java是DOS攻击demo
+DOS.java是DOS攻击demo  
+并非DDOS  
+经测试可以DOS自己导致死机👍非常牛逼
