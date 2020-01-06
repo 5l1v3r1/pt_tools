@@ -3,6 +3,7 @@
 ***
 
 dirscan.py 是个 web目录扫描器
+缺点：没有自定义报错，看起来有点蠢
 
 用法：./dirscan.py -w /usr/share/wordlists/wfuzz/general/common.txt -u xxxxxxxxxxxx.com -t 5
 
@@ -15,6 +16,17 @@ optional arguments:
 -t THREAD_NUM  thread options
 -u URLS        url options
 -w WORDLISTS   wordlists options
+```
+***
+
+ssh_brute.py 是个 ssh爆破脚本 
+缺点：单线程，速度慢，且无法指定端口
+
+用法：./ssh_brute.py xx.xx.xx.xx root /usr/share/wordlists/wfuzz/others/common_pass.txt
+
+```
+./ssh_brute.py
+[!]Usage: ./ssh_brute.py [HOST] [USERNAME] [DICT]
 ```
 ***
 
