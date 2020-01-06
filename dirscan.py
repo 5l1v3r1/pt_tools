@@ -4,11 +4,19 @@ import threading, argparse , requests , sys
 from queue import Queue
 #import pdb
 
+GREEN = "\033[32m"
+YELLOW = "\033[93m" 
+cyan = "\033[0;36m"
+none = "\033[0m"
+red = "\033[0;31m"
+
 class DirScan:
     def __init__(self , args):
         self.urls = args.urls
         self.thread_num = args.thread_num
         self.wordlists = args.wordlists 
+
+    
 
     class n00b_DirScan(threading.Thread):
         def __init__(self, queue , total):
@@ -16,18 +24,22 @@ class DirScan:
             self._queue = queue
             self._total = total
 
+        
+
         def run(self):
             while not self._queue.empty():
                 urls = self._queue.get()
                 try:
                     resp = requests.head(urls)
-                    sys.stdout.write('success')
+                    #sys.stdout.write('success')
                     if resp.status_code == 200 :
-                        sys.stdout.write('\r' + '[*]-----%s\t\t\n'%urls + "------------200")
+                        sys.stdout.write('\r' + '[*]-----%s\t\t'%urls + "------------"+ GREEN+"200" + none + "\n")
                     elif resp.status_code == 403 :
-                        sys.stdout.write('\r' + '[*]-----%s\t\t\n'%urls + "------------403")
+                        sys.stdout.write('\r' + '[*]-----%s\t\t'%urls + "------------"+ YELLOW+"403" + none + "\n")
                     elif resp.status_code == 302 :
-                        sys.stdout.write('\r' + '[*]-----%s\t\t\n'%urls + "------------302")
+                        sys.stdout.write('\r' + '[*]-----%s\t\t'%urls + "------------"+ cyan+"302" + none + "\n")
+                    elif resp.status_code ==500 :
+                        sys.stdout.write('\r' + '[*]-----%s\t\t'%urls + "------------"+ red +"500" + none + "\n")
                 except Exception as e:
                     print(e)
                     pass
