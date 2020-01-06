@@ -1,4 +1,5 @@
-package pang;
+
+//author : n00B
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
@@ -37,7 +38,7 @@ public class DOS<line> {
                     if(bis!=null){
                         if((len=bis.read())!=-1){
                             sb.append(new String(bytes,0,len));
-                            System.out.println("¹¥»÷³É¹¦£¡£¡£¡");
+                            System.out.println("Â¹Â¥Â»Ã·Â³Ã‰Â¹Â¦Â£Â¡Â£Â¡Â£Â¡");
                             bis.close();
                         }
                     }
