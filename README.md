@@ -2,7 +2,8 @@
 本脚本程序仅为学习交流分享，请遵守《中华人民共和国网络安全法》,勿用于非授权测试,如作他用所承受的法律责任一概与作者无关。
 ***
 
-dirscan.py 是个 web目录扫描器
+dirscan.py 是个 web目录扫描器  
+
 缺点：没有自定义报错，看起来有点蠢
 
 用法：./dirscan.py -w /usr/share/wordlists/wfuzz/general/common.txt -u xxxxxxxxxxxx.com -t 5
@@ -19,7 +20,8 @@ optional arguments:
 ```
 ***
 
-ssh_brute.py 是个 ssh爆破脚本 
+ssh_brute.py 是个 ssh爆破脚本  
+
 缺点：单线程，速度慢，且无法指定端口
 
 用法：./ssh_brute.py xx.xx.xx.xx root /usr/share/wordlists/wfuzz/others/common_pass.txt
