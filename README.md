@@ -26,6 +26,8 @@ moniter.py 是个netcat监控脚本（写完后觉得有点鸡肋）
   
 监听netcat程序交互，若有shell连进则发送邮件提醒  
   
+可改造成后用作简易蜜罐
+  
 用法：./moniter.py 4444
 ```
 ./moniter.py
