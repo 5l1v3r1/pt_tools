@@ -20,7 +20,19 @@ optional arguments:
 -w WORDLISTS   wordlists options
 ```
 ***
+moniter.py 是个netcat监控脚本（写完后觉得有点鸡肋）  
+  
+主要用处为：在目标机器上写入被动后门后（例如替换ls命令为反向连接shell等）  
+  
+监听netcat程序交互，若有shell连进则发送邮件提醒  
+  
+用法：./moniter.py 4444
+```
+./moniter.py
+[!]Usage: ./moniter.py [PORT] 
+```
 
+***
 ssh_brute.py 是个 ssh爆破脚本  
 
 缺点：单线程，速度慢，且无法指定端口
