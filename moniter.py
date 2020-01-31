@@ -13,9 +13,10 @@ def run(Port):
         process.expect_exact("connect")
         string =  str(process.before)
         ip = re.search(r'((25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d)))\.){3}(25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d)))',string,re.M|re.I)
-        print(ip.group())
-        em4il(ip)
-        process.interact()
+        if ip is not None:
+            print(ip.group())
+            em4il(ip)
+            process.interact()
 
 def em4il(ip):
     msg_from = "xxxxx@xx.com"                   #sender
