@@ -1,5 +1,5 @@
 #! /usr/bin/python3
-#author : n00B
+#author : n00B & khan Team
 
 import threading, argparse , requests , sys
 from queue import Queue
