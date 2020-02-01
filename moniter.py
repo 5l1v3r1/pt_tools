@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# author : n00B & khan Team
+# author : n00B@khan Team
 import pexpect,smtplib,re  #, pdb
 from sys import argv
 from email.mime.text import MIMEText
