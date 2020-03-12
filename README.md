@@ -3,7 +3,7 @@
 测试平台为linux
 ***
   
-### dirscan 更名并移动到 [n00B-tot / nfuzz](https://github.com/n00B-ToT/nfuzz)
+### dirscan 更名为 ”nfuzz“ 并移动到 [n00B-tot / nfuzz](https://github.com/n00B-ToT/nfuzz)
   
 ***
 moniter.py 是个netcat监控脚本（写完后觉得有点鸡肋）  
